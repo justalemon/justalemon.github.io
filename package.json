@@ -1,0 +1,18 @@
+{
+    "name": "lemonsite",
+    "version": "1.0.0",
+    "description": "Lemon's Website",
+    "main": "index.js",
+    "scripts": {
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/justalemon/justalemon.github.io.git"
+    },
+    "author": "Lemon",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/justalemon/justalemon.github.io/issues"
+    },
+    "homepage": "https://github.com/justalemon/justalemon.github.io#readme"
+}

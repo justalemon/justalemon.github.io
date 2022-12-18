@@ -8,11 +8,13 @@ html
 h1
 {
     font-size: min(9vw, 400%);
+    text-shadow: 3px 3px 3px black;
 }
 
 h2
 {
     font-size: 200%;
+    text-shadow: 2px 2px 2px black;
 }
 
 p

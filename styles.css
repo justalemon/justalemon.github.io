@@ -22,6 +22,11 @@ p
     font-size: 125%;
 }
 
+li
+{
+    font-size: 125%;
+}
+
 a:link
 {
     color: white;

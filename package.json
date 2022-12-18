@@ -4,6 +4,10 @@
     "description": "Lemon's Website",
     "main": "index.js",
     "scripts": {
+        "build": "npx tsc",
+        "watch": "npx tsc --watch",
+        "serve": "npx serve",
+        "start": "npx concurrently \"npm run watch\" \"npm run serve\""
     },
     "repository": {
         "type": "git",
@@ -14,5 +18,10 @@
     "bugs": {
         "url": "https://github.com/justalemon/justalemon.github.io/issues"
     },
-    "homepage": "https://github.com/justalemon/justalemon.github.io#readme"
+    "homepage": "https://github.com/justalemon/justalemon.github.io#readme",
+    "devDependencies": {
+        "concurrently": "^7.6.0",
+        "serve": "^14.1.2",
+        "typescript": "^4.9.4"
+    }
 }

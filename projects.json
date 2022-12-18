@@ -1,7 +1,11 @@
 [
     {
         "name": "LemonUI for .NET",
-        "url": "https://github.com/LemonUIbyLemon/LemonUI",
-        "description": "LemonUI for .NET is a library for creating different types of user interfaces in Grand Theft Auto V via modding frameworks that use .NET Framework or .NET Core (ScriptHookVDotNet, RagePluginHook, RageMP and FiveM)."
+        "description": "LemonUI for .NET is a library for creating different types of user interfaces in Grand Theft Auto V via modding frameworks that use .NET Framework or .NET Core (ScriptHookVDotNet, RagePluginHook, RageMP and FiveM).",
+        "urls": {
+            "GitHub": "https://github.com/LemonUIbyLemon/LemonUI",
+            "5mods": "https://www.gta5-mods.com/tools/lemonui",
+            "cfx.re Forums": "https://forum.cfx.re/t/1492419"
+        }
     }
 ]

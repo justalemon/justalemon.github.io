@@ -5,7 +5,7 @@ html
 
 h1
 {
-    font-size: 9vw;
+    font-size: min(9vw, 400%);
 }
 
 p

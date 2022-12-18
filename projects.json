@@ -7,5 +7,21 @@
             "5mods": "https://www.gta5-mods.com/tools/lemonui",
             "cfx.re Forums": "https://forum.cfx.re/t/1492419"
         }
+    },
+    {
+        "name": "SimpleSync",
+        "description": "A Time, Weather and Blackout synchronization resource for the FiveM framework for Grand Theft Auto V. It allows server operators to synchronize the Weather, Time and City Blackout between all of the clients connected.",
+        "urls": {
+            "GitHub": "https://github.com/justalemon/SimpleSync",
+            "cfx.re Forums": "https://forum.cfx.re/t/1107905"
+        }
+    },
+    {
+        "name": "SimplePassive",
+        "description": "A resource for the FiveM framework for Grand Theft Auto V that reimplements the Passive Mode system from Grand Theft Auto Online.",
+        "urls": {
+            "GitHub": "https://github.com/justalemon/SimplePassive",
+            "cfx.re Forums": "https://forum.cfx.re/t/1199967"
+        }
     }
 ]

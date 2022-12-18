@@ -4,7 +4,7 @@ function updateYears() {
     if (element === null) {
         console.error("Element containing years was not found.");
         return;
-    } 
+    }
 
     let now = Date.now();
     let birthday = Date.parse("2001-08-04");
@@ -13,8 +13,45 @@ function updateYears() {
     element.innerText = Math.trunc(years).toString();
 }
 
+function fillProjects() {
+    let element = document.getElementById("projects");
+
+    if (element === null) {
+        console.error("Element containing projects was not found.");
+        return;
+    }
+
+    fetch("/projects.json").then((response) => {
+        if (response.status !== 200)
+        {
+            console.error(`Unable to fetch list of projects: Code ${response.status}.`);
+            return;
+        }
+
+        return response.json();
+    }).then((projects) => {
+        if (projects === null)
+        {
+            return;
+        }
+
+        for (let projectIndex in projects)
+        {
+            let project = projects[projectIndex];
+
+            let newElement = document.createElement("details");
+            newElement.innerHTML = `<summary>${project.name}</summary><p>${project.description}</p>`;
+
+            element.insertAdjacentElement("beforeend", newElement);
+
+            console.log(project);
+        }
+    });
+}
+
 function main() {
     updateYears();
+    fillProjects();
 }
 
 main();

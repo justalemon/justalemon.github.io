@@ -6,7 +6,7 @@
     "scripts": {
         "build": "npx tsc",
         "watch": "npx tsc --watch",
-        "serve": "npx browser-sync start --server --files \"*.css,*.js,*.html,*.json\"",
+        "serve": "npx browser-sync start --server --no-open --files \"*.css,*.js,*.html,*.json\"",
         "start": "npx concurrently \"npm run watch\" \"npm run serve\""
     },
     "repository": {

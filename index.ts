@@ -39,12 +39,24 @@ function fillProjects() {
         {
             let project = projects[projectIndex];
 
+            let rawElement = `<summary>${project.name}</summary><p>${project.description}</p>`;
+            if (project.urls !== undefined)
+            {
+                rawElement += "<p>More Info:</p>\n<ul>";
+
+                for (let urlName in project.urls)
+                {
+                    let urlLink = project.urls[urlName];
+                    rawElement += `<li><a href="${urlLink}">${urlName}</a></li>`;
+                }
+
+                rawElement += "</ul>";
+            }
+
             let newElement = document.createElement("details");
-            newElement.innerHTML = `<summary>${project.name}</summary><p>${project.description}</p>`;
+            newElement.innerHTML = rawElement;
 
             element.insertAdjacentElement("beforeend", newElement);
-
-            console.log(project);
         }
     });
 }

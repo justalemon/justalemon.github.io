@@ -3,6 +3,8 @@ html
     font-family: "Roboto", sans-serif;
     background-color: #323232;
     color: white;
+    max-width: min(1000px, 75vw);
+    margin: 0px auto;
 }
 
 h1

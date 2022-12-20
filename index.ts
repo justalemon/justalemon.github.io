@@ -61,9 +61,25 @@ function fillProjects() {
     });
 }
 
+function addEasterEggs() {
+    let element = document.getElementById("lemon");
+
+    if (element === null) {
+        console.error("Where did the Lemon go?");
+        return;
+    }
+
+    element.innerText = "🍋";
+    element.addEventListener("click", () => {
+        let element = document.getElementById("lemon");
+        element.innerText = element.innerText == "Lemon" ? "🍋" : "Lemon";
+    });
+}
+
 function main() {
     updateYears();
     fillProjects();
+    addEasterEggs();
 }
 
 main();

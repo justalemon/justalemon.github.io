@@ -25,3 +25,27 @@ jobs:
           name: site
           path: dist
           if-no-files-found: error
+  deploy:
+    runs-on: ubuntu-22.04
+    needs:
+      - build
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3.0.1
+        with:
+          name: site
+          path: .
+      - name: Set up the Pages environment
+        uses: actions/configure-pages@v2.1.3
+      - name: Upload the new artifact for Pages
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: .
+      - name: Deploy site
+        uses: actions/deploy-pages@v1.2.3

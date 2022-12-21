@@ -13,6 +13,15 @@
         }
     },
     {
+        "name": "PatchMyPath",
+        "description": "A Windows Desktop app to manage game installs for Grand Theft Auto San Andreas, Grand Theft Auto IV, Grand Theft Auto V and Red Dead Redemption 2. It allows user to use symbolic links to reduce the size of the installs.",
+        "urls": {
+            "GitHub": "https://github.com/justalemon/PatchMyPath",
+            "5mods": "https://www.gta5-mods.com/tools/patchmypath",
+            "Nexus Mods": "https://www.nexusmods.com/reddeadredemption2/mods/61"
+        }
+    },
+    {
         "name": "SimpleSync",
         "description": "A Time, Weather and Blackout synchronization resource for the FiveM framework for Grand Theft Auto V. It allows server operators to synchronize the Weather, Time and City Blackout between all of the clients connected.",
         "urls": {

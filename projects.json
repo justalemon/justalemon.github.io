@@ -46,6 +46,14 @@
         }
     },
     {
+        "name": "RagePresence",
+        "description": "A mod for Grand Theft Auto V that adds Discord Rich Presence support. It comes with C++ Headers and .NET NuGet Packages for other developers to set their own status without conflicting with each other.",
+        "urls": {
+            "GitHub": "https://github.com/justalemon/RagePresence",
+            "5mods": "https://www.gta5-mods.com/scripts/ragepresence"
+        }
+    },
+    {
         "name": "SimpleSync",
         "description": "A Time, Weather and Blackout synchronization resource for the FiveM framework for Grand Theft Auto V. It allows server operators to synchronize the Weather, Time and City Blackout between all of the clients connected.",
         "urls": {

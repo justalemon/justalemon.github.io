@@ -27,5 +27,13 @@
             "GitHub": "https://github.com/justalemon/SimplePassive",
             "cfx.re Forums": "https://forum.cfx.re/t/1199967"
         }
+    },
+    {
+        "name": "GGOV",
+        "description": "A Mod for Grand Theft Auto V that aims to implement the features from the Sword Art Online Alternative Gun Gale Online anime series.",
+        "urls": {
+            "GitHub": "https://github.com/justalemon/GGOV",
+            "5mods": "https://www.gta5-mods.com/scripts/ggo"
+        }
     }
 ]

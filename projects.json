@@ -26,7 +26,8 @@
         "description": "A mod for Grand Theft Auto V that adds extra gameplay features by adding an inventory system, persistant storage of weapons for non playable characters and customizable HUD colors.",
         "urls": {
             "GitHub": "https://github.com/justalemon/PlayerCompanion",
-            "5mods": "https://www.gta5-mods.com/scripts/playercompanion"
+            "5mods": "https://www.gta5-mods.com/scripts/playercompanion",
+            "NuGet Package (ScriptHookVDotNet3)": "https://www.nuget.org/packages/PlayerCompanion/"
         }
     },
     {

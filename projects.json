@@ -5,7 +5,11 @@
         "urls": {
             "GitHub": "https://github.com/LemonUIbyLemon/LemonUI",
             "5mods": "https://www.gta5-mods.com/tools/lemonui",
-            "cfx.re Forums": "https://forum.cfx.re/t/1492419"
+            "cfx.re Forums": "https://forum.cfx.re/t/1492419",
+            "NuGet Package (FiveM)": "https://www.nuget.org/packages/LemonUI.FiveM/",
+            "NuGet Package (RageMP)": "https://www.nuget.org/packages/LemonUI.RageMP/",
+            "NuGet Package (RagePluginHook)": "https://www.nuget.org/packages/LemonUI.RagePluginHook/",
+            "NuGet Package (ScriptHookVDotNet3)": "https://www.nuget.org/packages/LemonUI.SHVDN3/"
         }
     },
     {

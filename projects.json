@@ -54,6 +54,14 @@
         }
     },
     {
+        "name": "ControllerReload",
+        "description": "A very simple mod for Grand Theft Auto V that allows players to reload the ScriptHookVDotNet scripts to be reloaded with a specific prompt. This was created for developers to reload their scripts with a controller without having to go back to the keyboard.",
+        "urls": {
+            "GitHub": "https://github.com/justalemon/ControllerReload",
+            "5mods": "https://www.gta5-mods.com/scripts/controllerreload"
+        }
+    },
+    {
         "name": "SimpleSync",
         "description": "A Time, Weather and Blackout synchronization resource for the FiveM framework for Grand Theft Auto V. It allows server operators to synchronize the Weather, Time and City Blackout between all of the clients connected.",
         "urls": {

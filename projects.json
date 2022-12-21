@@ -30,6 +30,14 @@
         }
     },
     {
+        "name": "FoodShops",
+        "description": "A mod for Grand Theft Auto V that reimplements the Food Shops from Grand Theft Auto San Andreas, allowing the player to restore their health by eating food at select places.",
+        "urls": {
+            "GitHub": "https://github.com/justalemon/FoodShops",
+            "5mods": "https://www.gta5-mods.com/scripts/foodshops"
+        }
+    },
+    {
         "name": "SimpleSync",
         "description": "A Time, Weather and Blackout synchronization resource for the FiveM framework for Grand Theft Auto V. It allows server operators to synchronize the Weather, Time and City Blackout between all of the clients connected.",
         "urls": {

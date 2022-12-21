@@ -62,6 +62,14 @@
         }
     },
     {
+        "name": "TuningShops",
+        "description": "A mod for Grand Theft Auto V that allows the creations of custom tuning shops all around the map. It's purpose is to allow users to create their own tuning garages in custom map mods, wherever they are.",
+        "urls": {
+            "GitHub": "https://github.com/justalemon/TuningShops",
+            "5mods": "https://www.gta5-mods.com/scripts/tuningshops"
+        }
+    },
+    {
         "name": "VersionPatcher",
         "description": "A GitHub Action that allows dynamic version patching during jobs in GitHub Workflows. It supports C# (csproj), npm (package.json), python (setup.py and __init__.py) and lua (fxmanifest.lua for FiveM/RedM/LibertyM).",
         "urls": {

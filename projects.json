@@ -38,6 +38,14 @@
         }
     },
     {
+        "name": "DumpsterDiving",
+        "description": "A mod for Grand Theft Auto V that reimplements the Dumpster Diving mechanic from Grand Theft Auto Chinatown Wars, allowing the player to search dumpsters for loot like guns, drugs or money, or useless stuff.",
+        "urls": {
+            "GitHub": "https://github.com/justalemon/DumpsterDiving",
+            "5mods": "https://www.gta5-mods.com/scripts/dumpsterdiving"
+        }
+    },
+    {
         "name": "SimpleSync",
         "description": "A Time, Weather and Blackout synchronization resource for the FiveM framework for Grand Theft Auto V. It allows server operators to synchronize the Weather, Time and City Blackout between all of the clients connected.",
         "urls": {

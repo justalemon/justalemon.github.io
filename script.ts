@@ -1,3 +1,15 @@
+interface Categories {
+    commision: boolean;
+    foss: boolean;
+}
+
+interface Project {
+    name: string;
+    category: Categories;
+    urls: Record<string, string>;
+    description: string;
+}
+
 function updateYears() {
     let element = document.getElementById("years");
 

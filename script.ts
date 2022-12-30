@@ -43,7 +43,7 @@ async function fillProjects() {
 
     let projects: Array<Project> = await response.json();
 
-    for (var project of projects)
+    for (var project of projects.sort((a, b) => a.name.localeCompare(b.name)))
     {
         let images = "";
 

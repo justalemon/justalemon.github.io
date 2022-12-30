@@ -5,6 +5,7 @@ interface Categories {
 
 interface Project {
     name: string;
+    image: string;
     category: Categories;
     urls: Record<string, string>;
     description: string;
@@ -59,7 +60,14 @@ async function fillProjects() {
             }
         }
 
-        let rawElement = `<summary>${project.name}${icons}</summary><p>${project.description}</p>`;
+        let image = "";
+
+        if (project.image !== undefined)
+        {
+            image = `<img class=\"demo\" src=\"img/projects/${project.image}\" alt=\"Project Demo.\"></img>`;
+        }
+
+        let rawElement = `<summary>${project.name}${icons}</summary>${image}<p>${project.description}</p>`;
         if (project.urls !== undefined)
         {
             rawElement += "<p>More Info:</p>\n<ul>";

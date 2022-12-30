@@ -59,3 +59,11 @@ summary
     max-width: 15px;
     max-height: 15px;
 }
+
+.demo
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}

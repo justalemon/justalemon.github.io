@@ -38,8 +38,21 @@ function fillProjects() {
         for (let projectIndex in projects)
         {
             let project = projects[projectIndex];
+            let images = "";
 
-            let rawElement = `<summary>${project.name}</summary><p>${project.description}</p>`;
+            if (project.category !== undefined)
+            {
+                if (project.category.commision)
+                {
+                    images += "<img class=\"icon\" src=\"/img/icon/coin.svg\" alt=\"This project is/was a comission.\"></img>";
+                }
+                if (project.category.foss)
+                {
+                    images += "<img class=\"icon\" src=\"/img/icon/osi.svg\" alt=\"This project is an Open Source project with an OSI Approved licence.\"></img>";
+                }
+            }
+
+            let rawElement = `<summary>${project.name}${images}</summary><p>${project.description}</p>`;
             if (project.urls !== undefined)
             {
                 rawElement += "<p>More Info:</p>\n<ul>";

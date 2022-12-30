@@ -53,3 +53,9 @@ summary
 {
     font-size: 130%;
 }
+
+.icon
+{
+    max-width: 15px;
+    max-height: 15px;
+}

@@ -1,6 +1,10 @@
 [
     {
         "name": "LemonUI for .NET",
+        "category": {
+            "commision": false,
+            "foss": true
+        },
         "description": "LemonUI for .NET is a library for creating different types of user interfaces in Grand Theft Auto V via modding frameworks that use .NET Framework or .NET Core (ScriptHookVDotNet, RagePluginHook, RageMP and FiveM).",
         "urls": {
             "GitHub": "https://github.com/LemonUIbyLemon/LemonUI",
@@ -14,6 +18,10 @@
     },
     {
         "name": "PatchMyPath",
+        "category": {
+            "commision": false,
+            "foss": true
+        },
         "description": "A Windows Desktop app to manage game installs for Grand Theft Auto San Andreas, Grand Theft Auto IV, Grand Theft Auto V and Red Dead Redemption 2. It allows user to use symbolic links to reduce the size of the installs.",
         "urls": {
             "GitHub": "https://github.com/justalemon/PatchMyPath",
@@ -23,6 +31,10 @@
     },
     {
         "name": "PlayerCompanion",
+        "category": {
+            "commision": false,
+            "foss": true
+        },
         "description": "A mod for Grand Theft Auto V that adds extra gameplay features by adding an inventory system, persistant storage of weapons for non playable characters and customizable HUD colors.",
         "urls": {
             "GitHub": "https://github.com/justalemon/PlayerCompanion",
@@ -32,6 +44,10 @@
     },
     {
         "name": "FoodShops",
+        "category": {
+            "commision": false,
+            "foss": true
+        },
         "description": "A mod for Grand Theft Auto V that reimplements the Food Shops from Grand Theft Auto San Andreas, allowing the player to restore their health by eating food at select places.",
         "urls": {
             "GitHub": "https://github.com/justalemon/FoodShops",
@@ -40,6 +56,10 @@
     },
     {
         "name": "DumpsterDiving",
+        "category": {
+            "commision": false,
+            "foss": true
+        },
         "description": "A mod for Grand Theft Auto V that reimplements the Dumpster Diving mechanic from Grand Theft Auto Chinatown Wars, allowing the player to search dumpsters for loot like guns, drugs or money, or useless stuff.",
         "urls": {
             "GitHub": "https://github.com/justalemon/DumpsterDiving",
@@ -48,6 +68,10 @@
     },
     {
         "name": "RagePresence",
+        "category": {
+            "commision": false,
+            "foss": true
+        },
         "description": "A mod for Grand Theft Auto V that adds Discord Rich Presence support. It comes with C++ Headers and .NET NuGet Packages for other developers to set their own status without conflicting with each other.",
         "urls": {
             "GitHub": "https://github.com/justalemon/RagePresence",
@@ -56,6 +80,10 @@
     },
     {
         "name": "ControllerReload",
+        "category": {
+            "commision": false,
+            "foss": true
+        },
         "description": "A very simple mod for Grand Theft Auto V that allows players to reload the ScriptHookVDotNet scripts to be reloaded with a specific prompt. This was created for developers to reload their scripts with a controller without having to go back to the keyboard.",
         "urls": {
             "GitHub": "https://github.com/justalemon/ControllerReload",
@@ -64,6 +92,10 @@
     },
     {
         "name": "TuningShops",
+        "category": {
+            "commision": true,
+            "foss": true
+        },
         "description": "A mod for Grand Theft Auto V that allows the creations of custom tuning shops all around the map. It's purpose is to allow users to create their own tuning garages in custom map mods, wherever they are.",
         "urls": {
             "GitHub": "https://github.com/justalemon/TuningShops",
@@ -72,6 +104,10 @@
     },
     {
         "name": "VersionPatcher",
+        "category": {
+            "commision": false,
+            "foss": true
+        },
         "description": "A GitHub Action that allows dynamic version patching during jobs in GitHub Workflows. It supports C# (csproj), npm (package.json), python (setup.py and __init__.py) and lua (fxmanifest.lua for FiveM/RedM/LibertyM).",
         "urls": {
             "GitHub": "https://github.com/justalemon/VersionPatcher",
@@ -80,6 +116,10 @@
     },
     {
         "name": "SimpleSync",
+        "category": {
+            "commision": false,
+            "foss": true
+        },
         "description": "A Time, Weather and Blackout synchronization resource for the FiveM framework for Grand Theft Auto V. It allows server operators to synchronize the Weather, Time and City Blackout between all of the clients connected.",
         "urls": {
             "GitHub": "https://github.com/justalemon/SimpleSync",
@@ -88,6 +128,10 @@
     },
     {
         "name": "SimplePassive",
+        "category": {
+            "commision": false,
+            "foss": true
+        },
         "description": "A resource for the FiveM framework for Grand Theft Auto V that reimplements the Passive Mode system from Grand Theft Auto Online.",
         "urls": {
             "GitHub": "https://github.com/justalemon/SimplePassive",
@@ -96,6 +140,10 @@
     },
     {
         "name": "GGOV",
+        "category": {
+            "commision": false,
+            "foss": true
+        },
         "description": "A Mod for Grand Theft Auto V that aims to implement the features from the Sword Art Online Alternative Gun Gale Online anime series.",
         "urls": {
             "GitHub": "https://github.com/justalemon/GGOV",

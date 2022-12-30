@@ -18,7 +18,7 @@ jobs:
       - name: Build with tsc
         run: npm run build
       - name: Copy files to dist folder
-        run: mkdir dist && cp index.html dist && cp script.js dist && cp script.js.map dist && cp styles.css dist && cp projects.json dist
+        run: mkdir dist && cp index.html dist && cp script.js dist && cp script.js.map dist && cp styles.css dist && cp projects.json dist && cp -r img dist
       - name: Upload the artifact
         uses: actions/upload-artifact@v3.1.1
         with:

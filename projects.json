@@ -17,6 +17,18 @@
         }
     },
     {
+        "name": "NeonControl",
+        "category": {
+            "commision": true,
+            "foss": true
+        },
+        "description": "NeonControl is a mod for Grand Theft Auto V that allows players to have configurable Neon Effects in vehicles that have Neon installed. It's meant to be used like they were under the vehicle LED lights.",
+        "urls": {
+            "GitHub": "https://github.com/justalemon/NeonControl",
+            "5mods": "https://www.gta5-mods.com/scripts/neoncontrol-customizable-neon-effects"
+        }
+    },
+    {
         "name": "PatchMyPath",
         "category": {
             "commision": false,

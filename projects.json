@@ -161,5 +161,101 @@
             "GitHub": "https://github.com/justalemon/GGOV",
             "5mods": "https://www.gta5-mods.com/scripts/ggo"
         }
+    },
+    {
+        "name": "M4R7H Status Bot",
+        "image": "m4r7h.png",
+        "category": {
+            "commision": true,
+            "foss": false
+        },
+        "description": "A simple Discord Bot made for GRNB3 from Team M4R7H that shows the status of a FiveM server (online or offline) alongside the number of players in the server and maximum capacity. It has support for configurable fonts, non-latin languages and RTL languages."
+    },
+    {
+        "name": "M4R7H Loading Screen",
+        "image": "m4r7hloading.png",
+        "category": {
+            "commision": true,
+            "foss": false
+        },
+        "description": "A simplistic yet very pleasing loading screen made for GRNB3 from Team M4R7H. It has a speedometer used to show the loading percentage."
+    },
+    {
+        "name": "M4R7H Reminders",
+        "image": "m4r7hreminders.png",
+        "category": {
+            "commision": true,
+            "foss": false
+        },
+        "description": "A Discord Bot made for GRNB3 from Team M4R7H used for creating staff reminders. You can create, edit and delete reminders related to server members at any time by any staff member."
+    },
+    {
+        "name": "ArabDrift",
+        "category": {
+            "commision": true,
+            "foss": false
+        },
+        "description": "A FiveM script made for GRNB3 from Team M4R7H that creates drift smoke like the classic Arab Drift videos on the internet."
+    },
+    {
+        "name": "Destiny Tournament Bot",
+        "category": {
+            "commision": true,
+            "foss": false
+        },
+        "description": "A Discord Bot made for Biggy from The Bunnings Guardians Discord Server that allowed staff members to create and manage Destiny 2 Tournaments. The Bot sadly never entered service."
+    },
+    {
+        "name": "AircraftSmoke",
+        "image": "aircraftsmoke.png",
+        "category": {
+            "commision": true,
+            "foss": false
+        },
+        "description": "A FiveM Script made for Br1tt from the Aero Network community that added custom smoke trails for all types of aircraft. It has the options to configure the smoke location, color and intensity."
+    },
+    {
+        "name": "NozzleControl",
+        "category": {
+            "commision": true,
+            "foss": false
+        },
+        "description": "A very simple FiveM Script made for Br1tt from the Aero Network community that allows precise airplane nozzle control via configurable keybinds."
+    },
+    {
+        "name": "MoveNFT Submission Bot",
+        "image": "movenft.png",
+        "category": {
+            "commision": true,
+            "foss": false
+        },
+        "description": "A Discord Bot made for Cocada from the MoveNFT Team. It was made to register and report Axie Infinity SLP farmed and Trophies obtained by other team members. It was never put into service due to the Ronin Bridge Hack on March 29th 2022 and the Ethereum switch to Proof of Stake in September 15, 2022."
+    },
+    {
+        "name": "Elomania Experience and Gold Bot",
+        "image": "elomaniaexperience.png",
+        "category": {
+            "commision": true,
+            "foss": false
+        },
+        "description": "A Discord Bot made for ptk from Elomania. It tracks user activity in Voice Chat and Text Channels and awards them Experience and Gold. Rewards can be claimed for rewards after getting enough Gold via the bot."
+    },
+    {
+        "name": "Elomania Sale Bot",
+        "image": "elomaniasale.png",
+        "category": {
+            "commision": true,
+            "foss": false
+        },
+        "description": "A Discord Bot made for ptk from Elomania. It allows you to buy boosts for different games, with a different selection of extras that you can add. Once you have your order, you can pay via Mercado Pago (Brazil) and PayPal."
+    },
+    {
+        "name": "Cyberpunks Registration Bot",
+        "image": "cyberpunks.png",
+        "category": {
+            "commision": true,
+            "foss": false
+        },
+        "description": "A Discord Bot made for ptk from the Cyberpunks Discord Server. Its a bot designed to follow a predefined registration process for new users, mainly to prevent raids and attacks of similar nature."
     }
 ]

@@ -25,7 +25,7 @@ function updateYears() {
     element.innerText = Math.trunc(years).toString();
 }
 
-function fillProjects() {
+async function fillProjects() {
     let element = document.getElementById("projects");
 
     if (element === null) {
@@ -33,57 +33,51 @@ function fillProjects() {
         return;
     }
 
-    fetch("/projects.json").then((response) => {
-        if (response.status !== 200)
-        {
-            console.error(`Unable to fetch list of projects: Code ${response.status}.`);
-            return;
-        }
+    let response = await fetch("/projects.json");
 
-        return response.json();
-    }).then((projects) => {
-        if (projects === null)
-        {
-            return;
-        }
+    if (response.status !== 200)
+    {
+        console.error(`Unable to fetch list of projects: Code ${response.status}.`);
+        return;
+    }
 
-        for (let projectIndex in projects)
-        {
-            let project = projects[projectIndex];
-            let images = "";
+    let projects: Array<Project> = await response.json();
 
-            if (project.category !== undefined)
+    for (var project of projects)
+    {
+        let images = "";
+
+        if (project.category !== undefined)
+        {
+            if (project.category.commision)
             {
-                if (project.category.commision)
-                {
-                    images += "<img class=\"icon\" src=\"/img/icon/coin.svg\" alt=\"This project is/was a comission.\"></img>";
-                }
-                if (project.category.foss)
-                {
-                    images += "<img class=\"icon\" src=\"/img/icon/osi.svg\" alt=\"This project is an Open Source project with an OSI Approved licence.\"></img>";
-                }
+                images += "<img class=\"icon\" src=\"/img/icon/coin.svg\" alt=\"This project is/was a comission.\"></img>";
+            }
+            if (project.category.foss)
+            {
+                images += "<img class=\"icon\" src=\"/img/icon/osi.svg\" alt=\"This project is an Open Source project with an OSI Approved licence.\"></img>";
+            }
+        }
+
+        let rawElement = `<summary>${project.name}${images}</summary><p>${project.description}</p>`;
+        if (project.urls !== undefined)
+        {
+            rawElement += "<p>More Info:</p>\n<ul>";
+
+            for (let urlName in project.urls)
+            {
+                let urlLink = project.urls[urlName];
+                rawElement += `<li><a href="${urlLink}">${urlName}</a></li>`;
             }
 
-            let rawElement = `<summary>${project.name}${images}</summary><p>${project.description}</p>`;
-            if (project.urls !== undefined)
-            {
-                rawElement += "<p>More Info:</p>\n<ul>";
-
-                for (let urlName in project.urls)
-                {
-                    let urlLink = project.urls[urlName];
-                    rawElement += `<li><a href="${urlLink}">${urlName}</a></li>`;
-                }
-
-                rawElement += "</ul>";
-            }
-
-            let newElement = document.createElement("details");
-            newElement.innerHTML = rawElement;
-
-            element.insertAdjacentElement("beforeend", newElement);
+            rawElement += "</ul>";
         }
-    });
+
+        let newElement = document.createElement("details");
+        newElement.innerHTML = rawElement;
+
+        element.insertAdjacentElement("beforeend", newElement);
+    }
 }
 
 function addEasterEggs() {

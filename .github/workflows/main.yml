@@ -25,7 +25,7 @@ jobs:
           ruby-version: "3.3.6"
       - run: bundle install
         env:
-          BUNDLE_RUBYGEMS__PKG__GITHUB__COM: {{ secrets.GHCR_TOKEN }}
+          BUNDLE_RUBYGEMS__PKG__GITHUB__COM: ${{ secrets.GHCR_TOKEN }}
       - run: bundle exec jekyll build
       - uses: actions/upload-pages-artifact@v3.0.1
         with:

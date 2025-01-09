@@ -1,0 +1,31 @@
+on:
+  release:
+    types:
+      - created
+  push:
+  pull_request:
+
+permissions:
+  # pages
+  pages: write
+  # releases
+  contents: write
+  # ghcr.io
+  packages: write
+  # idk what this is but actions/deploy-pages needs it
+  id-token: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - uses: ruby/setup-ruby@v1.207.0
+        with:
+          ruby-version: "3.3.6"
+      - run: bundle install
+      - run: bundle exec jekyll build
+      - uses: actions/upload-pages-artifact@v3.0.1
+        with:
+          path: "_site"
+      - uses: actions/deploy-pages@v4.0.5

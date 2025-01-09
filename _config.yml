@@ -1,0 +1,20 @@
+title: Lemon's
+email: Welcome to Lemon's Website :3
+theme: octi
+
+exclude:
+  - ".idea/"
+
+permalink: /posts/:title/
+
+socials:
+  twitter: ItsLemonChan
+  twitch: itslemonchan
+  github: justalemon
+  gitlab: itslemonchan
+  youtube_channel: UCEOwsaYl9b_oJ9VPnpFSfcg
+  # youtube_username: "" # for channels like @LinusTechTips
+
+collections:
+  projects:
+    output: true

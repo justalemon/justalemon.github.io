@@ -19,3 +19,5 @@ socials:
 collections:
   projects:
     output: true
+  db:
+    output: true

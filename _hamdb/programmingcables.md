@@ -9,7 +9,7 @@ title: Programming Cable Pinouts
 
 ![](/assets/img/db/socket_trs_2.5_and_3.5.svg)
 
-The most common connector for portable radios, originally designed by Kenwood but later became a de facto standard. It uses a pair of TRS connectors, one 2.5mm and one 3.5mm, where the smaller one is usually at the top and the big one at the bottom. It takes TX, RX and GND directly. A common 8 in 1 programming cable usually has it marked as K1.
+The most common connector for portable radios, originally designed by Kenwood but later became a de facto standard. It uses a pair of TRS connectors, one 2.5mm and one 3.5mm, where the smaller one is usually at the top and the big one at the bottom. A common 8 in 1 programming cable usually has it marked as K1.
 
 1. Not Connected
 2. TX
@@ -22,7 +22,7 @@ The most common connector for portable radios, originally designed by Kenwood bu
 
 ![](/assets/img/db/socket_trs.svg)
 
-This cable and pinout is used on all mobile QYT transceivers like the KT-8900, KT-8900D and others.
+This cable and pinout is used on all mobile QYT transceivers like the KT-8900, KT-8900D and others. It uses a standard 3.5mm TRS Jack and requires no passive components.
 
 1. TX
 2. RX
@@ -32,9 +32,9 @@ This cable and pinout is used on all mobile QYT transceivers like the KT-8900, K
 
 ![](/assets/img/db/socket_rj11.svg)
 
-Some Yaesu models use the front RJ11 mic connector for programming. It appears to require extra passive components (resistor + diode) but I could not find their values (might be the same as the Mini Din Cable?). Pinout comes from page 10 of the official manual of the FT-2900R.
+Some Yaesu models use the front RJ11 mic connector for programming. Pin 1 is connected directly to RX, but TX goes thru a diode (anode to TX, cathode to Pin 1) Most of the time, a 10k resistor between RX and VCC is added to pull the data line high. Pinout comes from page 10 of the official manual of the FT-2900R.
 
-1. Data
+1. Data (RX directly + TX via Diode)
 2. Not Connected
 3. Ground/GND
 4. Not Connected
@@ -45,12 +45,12 @@ Some Yaesu models use the front RJ11 mic connector for programming. It appears t
 
 ![](/assets/img/db/socket_mini_din_6.svg)
 
-Other Yaesu models use the Data port on the back for programming, which is a 6 Pin Mini Din. It requires a diode betweeen TX and pin 4 (anode to TX, cathode to Pin 4). Most of the time, a 10k resistor between RX and VCC is added to pull the data line high. For more information, I recommend checking [this DIY video by LB5JJ](https://www.youtube.com/watch?v=4PVS3rZUMCE).
+Other Yaesu models use the Data port on the back for programming, which is a 6 Pin Mini Din. Pin 4 is connected directly to RX, but TX goes thru a diode (anode to TX, cathode to Pin 4). Most of the time, a 10k resistor between RX and VCC is added to pull the data line high. For more information, I recommend checking [this DIY video by LB5JJ](https://www.youtube.com/watch?v=4PVS3rZUMCE).
 
 1. Not Connected
 2. Not Connected
 3. Not Connected
-4. Data
+4. Data (RX directly + TX via Diode)
 5. Ground/GND
 6. Not Connected
 
@@ -71,7 +71,7 @@ Simillar to the Kenwood K1, it also uses a pair of 2.5mm and 3.5mm connectors, b
 
 ![](/assets/img/db/socket_trs.svg)
 
-This cable is used on old Motorola models, mostly non DMR HT Radios like the Motorola EP and PRO series of handies. It uses a single conductor for data with a diode between TX and pin 2 (anode to TX, cathode to Pin 2). A common 8 in 1 programming cable usually has it marked as M1.
+This cable is used on old Motorola models, mostly non DMR HT Radios like the Motorola EP and PRO series of handies. Pin 2 is connected directly to RX, but TX goes thru a diode (anode to TX, cathode to Pin 2) A common 8 in 1 programming cable usually has it marked as M1.
 
 1. Not Connected
 2. Data (RX directly + TX via Diode)

@@ -67,6 +67,18 @@ Other Yaesu models use the Data port on the back for programming, which is a 6 P
 5. Ground/GND
 6. Not Connected
 
+## Anytone USB Mini B
+
+![](/assets/img/db/socket_usb_mini_b.svg)
+
+This pinout is used by HF/CB export radios from Anytone like the AT-5555n II and AT-6666/Pro and the Radioddity versions (QT60 and QT80). Please note that even if it uses a USB Mini B connector, it does not carry USB Data. Pinout taken from [this schematic](https://www.radiomanual.info/schemi/Vari/Anytone_AT-6666_sch.pdf). The female receptacle is upside down, so the pin numbers are flipped.
+
+1. Not Connected
+2. RX
+3. TX
+4. Ground/GND
+5. Ground/GND
+
 ## Hyera H1
 
 ![](/assets/img/db/socket_trs_3.5_and_2.5.svg)
@@ -105,4 +117,4 @@ Motorola uses a standard RJ-45 connector for programming their radios, but uses 
 7. Not Connected
 8. Not Connected
 
-###### TRS and TRRS Jack images [created by guidozz (CC0 1.0)](https://commons.wikimedia.org/wiki/File:Stereo_jack_connector.svg) and edited by me, RJ-11 and RJ-45 Jack [created by Sylvain Leroux (CC BY-SA 3.0)](https://commons.wikimedia.org/wiki/File:RJ-45_plug_and_jack.svg) and edited by me, Mini DIN 6 Pin [created by Mobius (Public Domain)](https://commons.wikimedia.org/wiki/File:MiniDIN-6_Connector_Pinout.svg) and edited by me.
+###### TRS and TRRS Jack images [created by guidozz (CC0 1.0)](https://commons.wikimedia.org/wiki/File:Stereo_jack_connector.svg) and edited by me, RJ-11 and RJ-45 Jack [created by Sylvain Leroux (CC BY-SA 3.0)](https://commons.wikimedia.org/wiki/File:RJ-45_plug_and_jack.svg) and edited by me, Mini DIN 6 Pin [created by Mobius (Public Domain)](https://commons.wikimedia.org/wiki/File:MiniDIN-6_Connector_Pinout.svg) and edited by me, USB Mini-B [created by Fred the Oyster (CC BY-SA 4.0)](https://commons.wikimedia.org/wiki/File:USB_Mini-B.svg) and edited by me.

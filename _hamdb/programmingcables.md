@@ -28,6 +28,32 @@ This cable and pinout is used on all mobile QYT transceivers like the KT-8900, K
 2. RX
 3. Ground/GND
 
+## Yaesu RJ11
+
+![](/assets/img/db/socket_rj11.svg)
+
+Some Yaesu models use the front RJ11 mic connector for programming. It appears to require extra passive components (resistor + diode) but I could not find their values (might be the same as the Mini Din Cable?). Pinout comes from page 10 of the official manual of the FT-2900R.
+
+1. Data
+2. Not Connected
+3. Ground/GND
+4. Not Connected
+5. Not Connected
+6. Not Connected
+
+## Yaesu Mini Din 6 Pin
+
+![](/assets/img/db/socket_mini_din_6.svg)
+
+Other Yaesu models use the Data port on the back for programming, which is a 6 Pin Mini Din. It requires a diode betweeen TX and pin 4 (anode to TX, cathode to Pin 4). Most of the time, a 10k resistor between RX and VCC is added to pull the data line high. For more information, I recommend checking [this DIY video by LB5JJ](https://www.youtube.com/watch?v=4PVS3rZUMCE).
+
+1. Not Connected
+2. Not Connected
+3. Not Connected
+4. Data
+5. Ground/GND
+6. Not Connected
+
 ## Hyera H1
 
 ![](/assets/img/db/socket_trs_3.5_and_2.5.svg)

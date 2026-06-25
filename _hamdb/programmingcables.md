@@ -91,3 +91,5 @@ Motorola uses a standard RJ-45 connector for programming their radios, but uses 
 6. Not Connected
 7. Not Connected
 8. Not Connected
+
+###### TRS and TRRS Jack images [created by guidozz (CC0 1.0)](https://commons.wikimedia.org/wiki/File:Stereo_jack_connector.svg) and edited by me, RJ-11 and RJ-45 Jack [created by Sylvain Leroux (CC BY-SA 3.0)](https://commons.wikimedia.org/wiki/File:RJ-45_plug_and_jack.svg) and edited by me, Mini DIN 6 Pin [created by Mobius (Public Domain)](https://commons.wikimedia.org/wiki/File:MiniDIN-6_Connector_Pinout.svg) and edited by me.

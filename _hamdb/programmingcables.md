@@ -18,6 +18,19 @@ The most common connector for portable radios, originally designed by Kenwood bu
 5. Not Connected
 6. RX
 
+## Baofeng DMR
+
+![](/assets/img/db/socket_trs_2.5_and_3.5.svg)
+
+Same form factor as the Kenwood K1, but instead of carrying serial data it carries USB. This pinout is used with all OpenGD77 compatible radios that use the K1 plug (GD-77, DM-1701, DM-1801, MD-UV380, etc).
+
+1. Not Connected
+2. Data +
+3. Ground/GND
+4. Data -
+5. Not Connected
+6. Not Connected
+
 ## QYT 3.5mm
 
 ![](/assets/img/db/socket_trs.svg)

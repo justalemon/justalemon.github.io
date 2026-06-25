@@ -19,5 +19,5 @@ socials:
 collections:
   projects:
     output: true
-  db:
+  hamdb:
     output: true

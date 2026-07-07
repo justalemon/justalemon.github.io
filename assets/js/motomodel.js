@@ -50,8 +50,11 @@ const protocols = {
     PW: "1.5ppm"
 }
 const features = {
-    _2: "16 Channels",
-    _4: "64 Channels"
+    _1: "4F",
+    _2: "64F (Mobile)/16 Channels (Portable)",
+    _4: "64 Channels",
+    _5: "128F",
+    _8: "160F"
 }
 
 function parseDetail(details, value, prefix, overrides) {

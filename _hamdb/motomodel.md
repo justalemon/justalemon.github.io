@@ -5,7 +5,7 @@ title: Motorola Model Decoder
 
 # Motorola Model Decoder
 
-Please enter your Motorola Model and press Decode
+Please enter your 14 character Motorola Model and press Decode
 
 <label for="model">Model:</label>
 <input type="text" id="model" name="model" required />

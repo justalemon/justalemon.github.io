@@ -67,15 +67,21 @@ function parseDetail(details, value, prefix, overrides) {
 function buildCommonName(region, series, package) {
     // PRO/CDM
     if (series == "25") {
-        // PRO
         if (region == "LA") {
-            // 3100
             if (package == "A" || package == "C") {
                 return "PRO3100";
             } else if (package == "D") {
                 return "PRO5100";
             } else if (package == "F") {
                 return "PRO7100";
+            }
+        } else if (region == "AA") {
+            if (package == "A" || package == "C") {
+                return "CDM750";
+            } else if (package == "D") {
+                return "CDM1250";
+            } else if (package == "F") {
+                return "CDM1550";
             }
         }
     }

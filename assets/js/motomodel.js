@@ -44,6 +44,12 @@ const features = {
     _4: "64 Channels"
 }
 
+function parseDetail(details, value, prefix) {
+    const key = prefix ? ("_" + value) : value;
+    const detail = details[key];
+    return detail ?? `Unknown (${value})`
+}
+
 function decodeModel(model, div) {
     if (typeof(model) !== "string") {
         alert("Model is not a string!");
@@ -55,15 +61,15 @@ function decodeModel(model, div) {
         return;
     }
 
-    const region = regions[model.substring(0, 2)] ?? `Unknown (${model.substring(0, 2)})`;
-    const type = types[model.substring(2, 3)] ?? `Unknown (${model.substring(2, 3)})`;
-    const serie = series["_" + model.substring(3, 5)] ?? `Unknown (${model.substring(3, 5)})`;
-    const band = bands[model.substring(5, 6)] ?? `Unknown (${model.substring(5, 6)})`;
-    const power = powerLevels[model.substring(6, 7)] ?? `Unknown (${model.substring(6, 7)})`;
-    const package = packages[model.substring(7, 8)] ?? `Unknown (${model.substring(7, 8)})`;
-    const spacing = spacings["_" + model.substring(8, 9)] ?? `Unknown (${model.substring(8, 9)})`;
-    const protocol = protocols[model.substring(9, 11)] ?? `Unknown (${model.substring(9, 11)})`;
-    const feature = features["_" + model.substring(11, 12)] ?? `Unknown (${model.substring(11, 12)})`;
+    const region = parseDetail(regions, model.substring(0, 2), false);
+    const type = parseDetail(types, model.substring(2, 3), false);
+    const serie = parseDetail(series, model.substring(3, 5), true);
+    const band = parseDetail(bands, model.substring(5, 6), false);
+    const power = parseDetail(powerLevels, model.substring(6, 7), false);
+    const package = parseDetail(packages, model.substring(7, 8), false);
+    const spacing = parseDetail(spacings, model.substring(8, 9), true);
+    const protocol = parseDetail(protocols, model.substring(9, 11), false);
+    const feature = parseDetail(features, model.substring(11, 12), true);
     const revision = model.substring(12, 13);
     const modelPackage = model.substring(13, 14);
 

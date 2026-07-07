@@ -1,13 +1,14 @@
 const regions = {
     AA: "USA",
-    LA: "Latin America"
+    LA: "Latin America",
+    MD: "Europe"
 }
 const types = {
     H: "Portable",
     M: "Mobile"
 }
 const series = {
-    _25: "PRO (LATAM)/CDM (NA)",
+    _25: "PRO (LATAM)/CDM (NA)/GM (EU)",
     _65: "EP450"
 }
 const bands = {
@@ -32,6 +33,7 @@ const powerLevels = {
     H: "1-25w",
     K: "25-40w"
 }
+// TODO: EU GM Packages
 const packages = {
     A: "No Screen, No Keyboard",
     C: "No Display, Basic Keyboard (Mobile)",
@@ -44,11 +46,14 @@ const spacings = {
     _9: "Programmable"
 }
 const protocols = {
-    AA: "Conventional",
+    AA: "Conventional (ROW)/Conventional 5 Tone (EU)",
+    AN: "Conventional MDC",
+    CK: "MPT",
     DU: "LTR",
     DP: "PassPort and LTR",
     PW: "1.5ppm"
 }
+// TODO: EU GM Features
 const features = {
     _1: "4F",
     _2: "64F (Mobile)/16 Channels (Portable)",
@@ -87,6 +92,14 @@ function buildCommonName(region, series, package) {
                 return "CDM1250";
             } else if (package == "F") {
                 return "CDM1550";
+            }
+        } else if (region == "MD") {
+            if (package == "A" || package == "C") {
+                return "GM340";
+            } else if (package == "D") {
+                return "GM360";
+            } else if (package == "F") {
+                return "GM380";
             }
         }
     }

@@ -8,5 +8,6 @@ title: Amateur Radio Database
 
 This is a central hub for the Amateur Radio information about legislation and technical details about specific radio models.
 
+* [Motorola Model Decodeer](/hamdb/motomodel)
 * [Programming Cable Pinouts](/hamdb/programmingcables)
 * [Power Cable Pinouts](/hamdb/powercables)

@@ -50,6 +50,23 @@ function parseDetail(details, value, prefix) {
     return detail ?? `Unknown (${value})`
 }
 
+function buildCommonName(region, series, package) {
+    // PRO/CDM
+    if (series == "25") {
+        // PRO
+        if (region == "LA") {
+            // 3100
+            if (package == "A" || package == "C") {
+                return "PRO3100";
+            } else if (package == "D") {
+                return "PRO5100";
+            } else if (package == "F") {
+                return "PRO7100";
+            }
+        }
+    }
+}
+
 function decodeModel(model, div) {
     if (typeof(model) !== "string") {
         alert("Model is not a string!");
@@ -73,7 +90,10 @@ function decodeModel(model, div) {
     const revision = model.substring(12, 13);
     const modelPackage = model.substring(13, 14);
 
-    details.innerText = `Region: ${region}\nType/Form Factor: ${type}\nSeries: ${serie}\nBand: ${band}\nPower: ${power}\nPhysical Package: ${package}\nChannel Spacing: ${spacing}\nProtocol: ${protocol}\nFeature Level: ${feature}\nModel Revision: ${revision}\nModel Package: ${modelPackage}`;
+    const commonName = buildCommonName(model.substring(0, 2), model.substring(3, 5), model.substring(7, 8)) ?? serie;
+    const name = "Motorola " + commonName + " " + band + " " + power;
+
+    details.innerText = `${name}\n\nRegion: ${region}\nType/Form Factor: ${type}\nSeries: ${serie}\nBand: ${band}\nPower: ${power}\nPhysical Package: ${package}\nChannel Spacing: ${spacing}\nProtocol: ${protocol}\nFeature Level: ${feature}\nModel Revision: ${revision}\nModel Package: ${modelPackage}`;
 }
 
 function addEvents() {

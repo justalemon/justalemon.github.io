@@ -45,7 +45,9 @@ const spacings = {
 }
 const protocols = {
     AA: "Conventional",
-    DU: "LTR"
+    DU: "LTR",
+    DP: "PassPort and LTR",
+    PW: "1.5ppm"
 }
 const features = {
     _2: "16 Channels",

@@ -13,6 +13,6 @@ Please enter your Motorola Model and press Decode
 
 <div id="details"></div>
 
-Please note that this website is a Work in Progress. Feel free to open an issue for models that are not properly decoded.
+Please note that this website is a Work in Progress. Feel free to [open an issue](https://github.com/justalemon/justalemon.github.io/issues) for models that are not properly decoded.
 
 <script src="/assets/js/motomodel.js"></script>

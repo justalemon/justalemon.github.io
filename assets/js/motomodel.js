@@ -15,9 +15,17 @@ const bands = {
     C: "HF (36.0-42.0 MHz)",
     D: "HF (42.0-50.0 MHz)",
     K: "VHF (146-174 MHz)",
-    Q: "UHF (403-440 MHz)",
-    R: "UHF (438-470 MHz)",
-    S: "UHF (465-495 MHz)"
+}
+const bandOverrides = {
+    _25: {
+        R: "UHF1 (403-470 MHz)",
+        S: "UHF2 (450-512 MHz)"
+    },
+    _65: {
+        Q: "UHF (403-440 MHz)",
+        R: "UHF (438-470 MHz)",
+        S: "UHF (465-495 MHz)"
+    }
 }
 const powerLevels = {
     D: "4-5w",
@@ -44,7 +52,13 @@ const features = {
     _4: "64 Channels"
 }
 
-function parseDetail(details, value, prefix) {
+function parseDetail(details, value, prefix, overrides) {
+    if (!overrides) {
+        overrides = {};
+    }
+
+    details = { ...details, ...overrides };
+
     const key = prefix ? ("_" + value) : value;
     const detail = details[key];
     return detail ?? `Unknown (${value})`
@@ -81,7 +95,7 @@ function decodeModel(model, div) {
     const region = parseDetail(regions, model.substring(0, 2), false);
     const type = parseDetail(types, model.substring(2, 3), false);
     const serie = parseDetail(series, model.substring(3, 5), true);
-    const band = parseDetail(bands, model.substring(5, 6), false);
+    const band = parseDetail(bands, model.substring(5, 6), false, bandOverrides["_" + model.substring(3, 5)]);
     const power = parseDetail(powerLevels, model.substring(6, 7), false);
     const package = parseDetail(packages, model.substring(7, 8), false);
     const spacing = parseDetail(spacings, model.substring(8, 9), true);

@@ -1,4 +1,5 @@
 const regions = {
+    AA: "USA",
     LA: "Latin America"
 }
 const types = {
@@ -6,10 +7,13 @@ const types = {
     M: "Mobile"
 }
 const series = {
-    _25: "PRO/CDM",
+    _25: "PRO (LATAM)/CDM (NA)",
     _65: "EP450"
 }
 const bands = {
+    B: "HF (25.7-36.0 MHz)",
+    C: "HF (36.0-42.0 MHz)",
+    D: "HF (42.0-50.0 MHz)",
     K: "VHF (146-174 MHz)",
     Q: "UHF (403-440 MHz)",
     R: "UHF (438-470 MHz)",

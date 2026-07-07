@@ -1,5 +1,6 @@
 const regions = {
     AA: "USA",
+    AZ: "Asia",
     LA: "Latin America",
     MD: "Europe"
 }

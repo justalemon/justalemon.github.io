@@ -10,13 +10,16 @@ const types = {
 }
 const series = {
     _25: "PRO (LATAM)/CDM (NA)/GM (EU)",
+    _56: "DGP8550e",
     _65: "EP450"
 }
 const bands = {
     B: "HF (29.7-36.0 MHz)",
     C: "HF (36.0-42.0 MHz)",
     D: "HF (42.0-50.0 MHz)",
+    J: "VHF (146-174 MHz)",  // DGP8550e
     K: "VHF (146-174 MHz)",
+    R: "UHF (403-527 MHz)"  // DGP8550e
 }
 const bandOverrides = {
     _25: {

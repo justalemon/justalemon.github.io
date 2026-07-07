@@ -11,7 +11,7 @@ const series = {
     _65: "EP450"
 }
 const bands = {
-    B: "HF (25.7-36.0 MHz)",
+    B: "HF (29.7-36.0 MHz)",
     C: "HF (36.0-42.0 MHz)",
     D: "HF (42.0-50.0 MHz)",
     K: "VHF (146-174 MHz)",

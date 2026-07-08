@@ -1,0 +1,58 @@
+body {
+    max-width: 95vw !important;
+}
+
+.info {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 1px;
+}
+
+.band {
+    display: flex;
+}
+
+.all {
+    background-color: #cb1bad;
+    color: white;
+}
+
+.cw {
+    background-color: #1bcb82;
+    color: white;
+}
+
+.ssb {
+    background-color: #1b8acb;
+    color: white;
+}
+
+.dm {
+    background-color: #e7562b;
+    color: white;
+}
+
+.guard {
+    background-color: #e72b2b;
+    color: white;
+}
+
+.fm {
+    background-color: #2b92e7;
+    color: white;
+}
+
+.dv {
+    background-color: #e72bde;
+    color: white;
+}
+
+.atv {
+    background-color: #2110c0;
+    color: white;
+}

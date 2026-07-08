@@ -1,0 +1,611 @@
+# LF
+- name: 2200m
+  range:
+    start: 135.7
+    end: 137.8
+  allocations:
+    - start: 135.7
+      end: 137.8
+      mode: all
+      description: All Modes
+# MF
+- name: 630m
+  range:
+    start: 472
+    end: 479
+  allocations:
+    - start: 472
+      end: 479
+      mode: cw
+      description: CW
+    - start: 472
+      end: 479
+      mode: dm
+      description: Digital Modes
+- name: 160m
+  notes: Band only goes up to 1850 kHz instead of 2000 kHz.
+  range:
+    start: 1800
+    end: 1850
+  allocations:
+    - start: 1800
+      end: 1810
+      mode: dm
+      description: DM
+    - start: 1839
+      end: 1840
+      mode: dm
+      description: DM
+    - start: 1810
+      end: 1850
+      mode: cw
+      description: CW
+    - start: 1840
+      end: 1850
+      mode: ssb
+      description: SSB
+# HF
+- name: 80m
+  notes: Band only goes up to 3750 kHz instead of 4000 kHz.
+  range:
+    start: 3500
+    end: 3750
+  allocations:
+    - start: 3500
+      end: 3600
+      mode: cw
+      description: CW
+    - start: 3570
+      end: 3600
+      mode: dm
+      description: DM
+    - start: 3600
+      end: 3750
+      mode: all
+      description: All Modes
+- name: 60m
+  range:
+    start: 5351.5
+    end: 5366.5
+  allocations:
+    - start: 5351.5
+      end: 5354
+      mode: cw
+      description: CW
+    - start: 5351.5
+      end: 5354
+      mode: dm
+      description: DM
+    - start: 5354
+      end: 5366
+      mode: all
+      description: All Modes
+    - start: 5366
+      end: 5366.5
+      mode: cw
+      description: CW
+    - start: 5366
+      end: 5366.5
+      mode: dm
+      description: DM
+- name: 40m
+  range:
+    start: 7000
+    end: 7300
+  allocations:
+    - start: 7000
+      end: 7050
+      mode: cw
+      description: CW
+    - start: 7040
+      end: 7050
+      mode: dm
+      description: DM
+    - start: 7050
+      end: 7300
+      mode: all
+      description: All Modes
+- name: 30m
+  notes: Band only goes up to 10125 kHz instead of 10150 kHz.
+  range:
+    start: 10100
+    end: 10125
+  allocations:
+    - start: 10100
+      end: 10125
+      mode: cw
+      description: CW
+- name: 20m
+  range:
+    start: 14000
+    end: 14350
+  allocations:
+    - start: 14000
+      end: 14101
+      mode: cw
+      description: CW
+    - start: 14070
+      end: 14099
+      mode: dm
+      description: DM
+    - start: 14101
+      end: 14350
+      mode: all
+      description: All Modes
+- name: 17m
+  range:
+    start: 18068
+    end: 18168
+  allocations:
+    - start: 18068
+      end: 18111
+      mode: cw
+      description: CW
+    - start: 18095
+      end: 18109
+      mode: dm
+      description: DM
+    - start: 18111
+      end: 18168
+      mode: all
+      description: All Modes
+- name: 15m
+  range:
+    start: 21000
+    end: 21450
+  allocations:
+    - start: 21000
+      end: 21120
+      mode: cw
+      description: CW
+    - start: 21149
+      end: 21151
+      mode: cw
+      description: CW
+    - start: 21070
+      end: 21120
+      mode: dm
+      description: DM
+    - start: 21120
+      end: 21149
+      mode: all
+      description: All Modes
+    - start: 21151
+      end: 21450
+      mode: all
+      description: All Modes
+- name: 12m
+  range:
+    start: 24890
+    end: 24990
+  allocations:
+    - start: 24890
+      end: 24931
+      mode: cw
+      description: CW
+    - start: 24915
+      end: 24929
+      mode: dm
+      description: DM
+    - start: 24931
+      end: 24990
+      mode: all
+      description: All Modes
+- name: 10m
+  range:
+    start: 28000
+    end: 29700
+  allocations:
+    - start: 28000
+      end: 28225
+      mode: cw
+      description: CW
+    - start: 28070
+      end: 28190
+      mode: dm
+      description: DM
+    - start: 28225
+      end: 29510
+      mode: all
+      description: All Modes
+    - start: 29510
+      end: 29520
+      mode: guard
+      description: G
+    - start: 29520
+      end: 29700
+      mode: fm
+      description: FM
+    - start: 29520
+      end: 29700
+      mode: dv
+      description: DV
+- name: 6m
+  range:
+    start: 50000
+    end: 54000
+  allocations:
+    - start: 50000
+      end: 50400
+      mode: cw
+      description: CW
+    - start: 50100
+      end: 50400
+      mode: ssb
+      description: SSB
+    - start: 50400
+      end: 51000
+      mode: all
+      description: All
+    - start: 51000
+      end: 51100
+      mode: cw
+      description: CW
+    - start: 51000
+      end: 51100
+      mode: ssb
+      description: SSB
+    - start: 51100
+      end: 52100
+      mode: fm
+      description: FM
+    - start: 51100
+      end: 52100
+      mode: dv
+      description: DV
+    - start: 52100
+      end: 54000
+      mode: all
+      description: All
+- name: 2m
+  range:
+    start: 144000
+    end: 148000
+  allocations:
+    - start: 144000
+      end: 144360
+      mode: cw
+      description: CW
+    - start: 144110
+      end: 144180
+      mode: dm
+      description: DM
+    - start: 144150
+      end: 144275
+      mode: ssb
+      description: SSB
+    - start: 144300
+      end: 144360
+      mode: ssb
+      description: SSB
+    - start: 144360
+      end: 144500
+      mode: dm
+      description: DM
+    - start: 144500
+      end: 144600
+      mode: all
+      description: All
+    - start: 144600
+      end: 145000
+      mode: fm
+      description: FM
+    - start: 144600
+      end: 145000
+      mode: dv
+      description: DV
+    - start: 145000
+      end: 145200
+      mode: all
+      description: All Modes
+    - start: 145200
+      end: 145790
+      mode: fm
+      description: FM
+    - start: 145200
+      end: 145790
+      mode: dv
+      description: DV
+    - start: 145790
+      end: 145800
+      mode: guard
+      description: G
+    - start: 145800
+      end: 146000
+      mode: all
+      description: All Modes
+    - start: 146000
+      end: 148000
+      mode: fm
+      description: FM
+    - start: 146000
+      end: 148000
+      mode: dv
+      description: DV
+- name: 1.2m
+  range:
+    start: 220000
+    end: 225000
+  allocations:
+    - start: 220000
+      end: 222000
+      mode: all
+      description: All
+    - start: 222000
+      end: 222150
+      mode: cw
+      description: CW
+    - start: 222000
+      end: 222050
+      mode: dm
+      description: DM
+    - start: 222060
+      end: 222100
+      mode: dm
+      description: DM
+    - start: 222070
+      end: 222150
+      mode: ssb
+      description: SSB
+    - start: 222250
+      end: 225000
+      mode: fm
+      description: FM
+    - start: 222250
+      end: 225000
+      mode: dv
+      description: DV
+    - start: 223520
+      end: 223700
+      mode: all
+      description: All Modes
+- name: 70cm
+  notes: Band range is only between 430-440 MHz. 430-432 MHz is de facto All Modes.
+  range:
+    start: 430000
+    end: 440000
+  allocations:
+    - start: 430000
+      end: 432000
+      mode: all
+      description: All
+    - start: 432000
+      end: 433000
+      mode: cw
+      description: CW
+    - start: 432025
+      end: 432100
+      mode: dm
+      description: DM
+    - start: 432100
+      end: 432300
+      mode: ssb
+      description: SSB
+    - start: 432400
+      end: 433000
+      mode: dm
+      description: DM
+    - start: 432420
+      end: 433000
+      mode: ssb
+      description: SSB
+    - start: 433050
+      end: 440000
+      mode: all
+      description: All Modes
+- name: 33cm
+  notes: Band is not allocated in Chile.
+  range:
+    start: 902000
+    end: 928000
+- name: 23cm
+  range:
+    start: 1240000
+    end: 1300000
+  allocations:
+    - start: 1240000
+      end: 1246000
+      mode: atv
+      description: ATV
+    - start: 1246000
+      end: 1248000
+      mode: fm
+      description: FM
+    - start: 1246000
+      end: 1248000
+      mode: dv
+      description: DV
+    - start: 1248000
+      end: 1252000
+      mode: dm
+      description: DM
+    - start: 1252000
+      end: 1258000
+      mode: atv
+      description: ATV
+    - start: 1258000
+      end: 1260000
+      mode: fm
+      description: FM
+    - start: 1258000
+      end: 1260000
+      mode: dv
+      description: DV
+    - start: 1260000
+      end: 1270000
+      mode: all
+      description: All
+    - start: 1270000
+      end: 1276000
+      mode: fm
+      description: FM
+    - start: 1270000
+      end: 1276000
+      mode: dv
+      description: DV
+    - start: 1276000
+      end: 1282000
+      mode: atv
+      description: ATV
+    - start: 1282000
+      end: 1288000
+      mode: fm
+      description: FM
+    - start: 1282000
+      end: 1288000
+      mode: dv
+      description: DV
+    - start: 1288000
+      end: 1294000
+      mode: all
+      description: All
+    - start: 1290000
+      end: 1295000
+      mode: fm
+      description: FM
+    - start: 1290000
+      end: 1295000
+      mode: dv
+      description: DV
+    - start: 1295000
+      end: 1295800
+      mode: all
+      description: All
+    - start: 1295800
+      end: 1296080
+      mode: dm
+      description: DM
+    - start: 1295800
+      end: 1296200
+      mode: ssb
+      description: SSB
+    - start: 1295800
+      end: 1296400
+      mode: cw
+      description: CW
+    - start: 1296200
+      end: 1296400
+      mode: dm
+      description: DM
+    - start: 1296400
+      end: 1297000
+      mode: all
+      description: All
+    - start: 1297000
+      end: 1300000
+      mode: dm
+      description: DM
+- name: 13cm
+  notes: Band is only between 2400-2450 Mhz.
+  range:
+    start: 2400000
+    end: 2450000
+  allocations:
+    - start: 2400000
+      end: 2450000
+      mode: all
+      description: All Modes
+- name: 9cm
+  notes: Band only goes up to 3400 MHz instead of 3500 MHz.
+  range:
+    start: 3300000
+    end: 3400000
+  allocations:
+    - start: 3300000
+      end: 3332000
+      mode: all
+      description: All Modes
+    - start: 3339000
+      end: 3345800
+      mode: all
+      description: All Modes
+    - start: 3352500
+      end: 3360000
+      mode: all
+      description: All Modes
+    - start: 3360000
+      end: 3400000
+      mode: dm
+      description: Digital Modes
+- name: 5cm
+  notes: Band only goes up to 5850 MHz instead of 5925 MHz.
+  range:
+    start: 5650
+    end: 5850
+  allocations:
+    - start: 5650
+      end: 5760.3
+      mode: all
+      description: All Modes
+    - start: 5760.3
+      end: 5761
+      mode: cw
+      description: CW
+    - start: 5761
+      end: 5850
+      mode: all
+      description: All Modes
+- name: 3cm
+  notes: Band only goes up from 10450 MHz instead of 10000 MHz.
+  range:
+    start: 10450
+    end: 10500
+  allocations:
+    - start: 10450
+      end: 10500
+      mode: all
+      description: All Modes
+- name: 1.2cm
+  notes: Band only goes up from 24050 MHz instead of 24000 MHz.
+  range:
+    start: 24050
+    end: 24250
+  allocations:
+    - start: 24050
+      end: 24250
+      mode: all
+      description: All Modes
+- name: 6mm
+  range:
+    start: 47000
+    end: 47200
+  allocations:
+    - start: 47000
+      end: 47200
+      mode: all
+      description: All Modes
+- name: 4mm
+  notes: Band only goes up to 81000 MHz instead of 81500 MHz.
+  range:
+    start: 76000
+    end: 81000
+  allocations:
+    - start: 76000
+      end: 81000
+      mode: all
+      description: All Modes
+- name: 2.5mm
+  notes: Band is not allocated in Chile.
+  range:
+    start: 122250
+    end: 123000
+- name: 2mm
+  notes: Band only goes up from 136 GHz instead of 134 GHz.
+  range:
+    start: 136
+    end: 141
+  allocations:
+    - start: 136
+      end: 141
+      mode: all
+      description: All Modes
+- name: 1mm
+  notes: Band only goes up to 248 GHz instead of 250 GHz.
+  range:
+    start: 241
+    end: 248
+  allocations:
+    - start: 241
+      end: 248
+      mode: all
+      description: All Modes

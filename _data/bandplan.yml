@@ -259,104 +259,104 @@
       description: All
 - name: 2m
   range:
-    start: 144000
-    end: 148000
+    start: 144
+    end: 148
   allocations:
-    - start: 144000
-      end: 144360
+    - start: 144.000
+      end: 144.360
       mode: cw
       description: CW
-    - start: 144110
-      end: 144180
+    - start: 144.110
+      end: 144.180
       mode: dm
       description: DM
-    - start: 144150
-      end: 144275
+    - start: 144.150
+      end: 144.275
       mode: ssb
       description: SSB
-    - start: 144300
-      end: 144360
+    - start: 144.300
+      end: 144.360
       mode: ssb
       description: SSB
-    - start: 144360
-      end: 144500
+    - start: 144.360
+      end: 144.500
       mode: dm
       description: DM
-    - start: 144500
-      end: 144600
+    - start: 144.500
+      end: 144.600
       mode: all
       description: All
-    - start: 144600
-      end: 145000
+    - start: 144.600
+      end: 145.000
       mode: fm
       description: FM
-    - start: 144600
-      end: 145000
+    - start: 144.600
+      end: 145.000
       mode: dv
       description: DV
-    - start: 145000
-      end: 145200
+    - start: 145.000
+      end: 145.200
       mode: all
       description: All Modes
-    - start: 145200
-      end: 145790
+    - start: 145.200
+      end: 145.790
       mode: fm
       description: FM
-    - start: 145200
-      end: 145790
+    - start: 145.200
+      end: 145.790
       mode: dv
       description: DV
-    - start: 145790
-      end: 145800
+    - start: 145.790
+      end: 145.800
       mode: guard
       description: G
-    - start: 145800
-      end: 146000
+    - start: 145.800
+      end: 146.000
       mode: all
       description: All Modes
-    - start: 146000
-      end: 148000
+    - start: 146.000
+      end: 148.000
       mode: fm
       description: FM
-    - start: 146000
-      end: 148000
+    - start: 146.000
+      end: 148.000
       mode: dv
       description: DV
 - name: 1.2m
   range:
-    start: 220000
-    end: 225000
+    start: 220
+    end: 225
   allocations:
-    - start: 220000
-      end: 222000
+    - start: 220.000
+      end: 222.000
       mode: all
       description: All
-    - start: 222000
-      end: 222150
+    - start: 222.000
+      end: 222.150
       mode: cw
       description: CW
-    - start: 222000
-      end: 222050
+    - start: 222.000
+      end: 222.050
       mode: dm
       description: DM
-    - start: 222060
-      end: 222100
+    - start: 222.060
+      end: 222.100
       mode: dm
       description: DM
-    - start: 222070
-      end: 222150
+    - start: 222.070
+      end: 222.150
       mode: ssb
       description: SSB
-    - start: 222250
-      end: 225000
+    - start: 222.250
+      end: 225.000
       mode: fm
       description: FM
-    - start: 222250
-      end: 225000
+    - start: 222.250
+      end: 225.000
       mode: dv
       description: DV
-    - start: 223520
-      end: 223700
+    - start: 223.520
+      end: 223.700
       mode: all
       description: All Modes
 - name: 70cm

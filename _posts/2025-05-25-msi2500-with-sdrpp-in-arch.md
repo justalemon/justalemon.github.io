@@ -7,6 +7,8 @@ date: 2025-05-25 09:03:15 -0400
 
 > If you just want the installation steps, just skip to the [Summary](#summary)
 
+> 2026 update: I have started maintaining some of the AUR packages listed in this post
+
 Back in April, I got my hands in this weird Chinese clone SDR (Software Defined Radio) of an SDRPlay RSP1. I got it for free from a friend that has an electronics store. Since then, I have tried to use it in Windows 11 and Arch Linux, and only managed to get it working in Arch Linux for SDR++.
 
 ## The MSi2500

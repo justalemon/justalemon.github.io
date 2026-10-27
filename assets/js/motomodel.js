@@ -19,6 +19,7 @@ const bands = {
     D: "HF (42.0-50.0 MHz)",
     J: "VHF (146-174 MHz)",  // DGP8550e
     K: "VHF (146-174 MHz)",
+    M: "VHF (220-222 MHz)",
     R: "UHF (403-527 MHz)"  // DGP8550e
 }
 const bandOverrides = {
@@ -47,7 +48,8 @@ const packages = {
     N: "4 Line Screen, Improved Keyboard"
 }
 const spacings = {
-    _9: "Programmable"
+    _9: "Programmable",
+    _4: "12.5 kHz"
 }
 const protocols = {
     AA: "Conventional (ROW)/Conventional 5 Tone (EU)",
